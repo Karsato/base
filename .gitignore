@@ -1,0 +1,4 @@
+# ~/.config/base/.gitignore (o en la raíz del repo)
+.pixi/
+*.log
+.DS_Store
