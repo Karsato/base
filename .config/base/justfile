@@ -1,0 +1,25 @@
+# ~/.config/base/justfile
+alias b := install-base
+
+# Instala Neovim usando el manifiesto modular
+install-nvim:
+    pixi global install neovim
+install-neovim:
+    pixi global install neovim
+
+# Ejemplo para instalar herramientas rápidas sin archivo TOML
+install-tools:
+    pixi global install bat fzf eza zoxide
+
+
+# Instala el kit de supervivencia básico
+install-base:
+    pixi global install bat fzf eza zoxide ripgrep btop
+
+# Actualiza absolutamente todo lo instalado por Pixi
+update:
+    pixi global update
+
+# Muestra qué herramientas tienes instaladas y dónde
+list:
+    pixi global list
